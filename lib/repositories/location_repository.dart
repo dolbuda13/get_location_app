@@ -8,6 +8,7 @@ class LocationRepository {
   final String _baseUrl = "https://openapi.naver.com/v1/search/local.json";
   final String _clientId = "";
   final String _clientSecret = "";//개인정보 올리지 않도록 주의
+  final String _clientSecret = "";
 
   Future<List<Location>> searchLocations(String query) async {
     //네트워크 통신은 반드시 try catch 필요
