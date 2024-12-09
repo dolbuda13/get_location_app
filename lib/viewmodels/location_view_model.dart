@@ -9,7 +9,7 @@ final locationProvider = StateNotifierProvider<LocationNotifier, List<Location>>
 class LocationNotifier extends StateNotifier<List<Location>> {
   LocationNotifier() : super([]);
 
-  Future<void> search(String query) async {
+  Future<void> search(String query) async {//reposiotry에서 데이터 받아오기
     final repository = LocationRepository();
     state = await repository.searchLocations(query);
   }

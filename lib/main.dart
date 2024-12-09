@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'views/home_page.dart';
 
 void main() {
-  runApp(ProviderScope(child: MyApp()));
+  runApp(ProviderScope(child: MyApp())); //providerscope을 사용하여 riverpod이 viewmodel 관리 가능
 }
 
 class MyApp extends StatelessWidget {
@@ -14,4 +14,4 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
     );
   }
-}
+}  
