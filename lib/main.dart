@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '위치 기반 검색 앱',
-      //home: HomePage(),
+      home: HomePage(),
     );
   }
 }  
