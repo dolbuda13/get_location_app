@@ -1,5 +1,7 @@
 import 'package:dio/dio.dart';
+import 'dart:convert';
 import '../models/location.dart';
+import 'package:http/http.dart';
 
 class LocationRepository {
   final Dio _dio = Dio();
@@ -12,7 +14,7 @@ class LocationRepository {
     try {
       final response = await _dio.get(
         _baseUrl,
-        queryParameters: {"query": query, "display":5},
+        queryParameters: {"query": query, "display":10},
         options: Options(headers: {
           "X-Naver-Client-Id": _clientId,
           "X-Naver-Client-Secret": _clientSecret,
